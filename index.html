@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+  <title>从视频中提取帧</title>
+</head>
+
+<body>
+  <h2>从视频中提取帧</h2>
+  <p>上传视频并播放您要从中提取帧的部分。</p>
+
+  <input id="videoInput" type="file" accept="video/*">
+  <br /><br />
+
+  <video id="video" width="426" height="240" controls muted></video>
+  <br />
+  <canvas id="canvas" width="426" height="240"></canvas>
+
+  <br /><br />
+
+  <button onclick="downloadFrames()">下载视频帧</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.2.0/jszip.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
